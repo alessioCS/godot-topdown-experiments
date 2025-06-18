@@ -5,7 +5,6 @@
 .nomedia
 .godot/
 export_credentials.cfg
-*.godot
 project.godot.user*
 .DS_Store
 Thumbs.db
@@ -13,3 +12,4 @@ ehthumbs.db
 Icon?
 __MACOSX/
 .vscode/
+*.tmp
