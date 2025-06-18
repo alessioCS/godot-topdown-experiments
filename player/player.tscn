@@ -214,4 +214,3 @@ sprite_frames = SubResource("SpriteFrames_nvl01")
 animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position_smoothing_enabled = true
