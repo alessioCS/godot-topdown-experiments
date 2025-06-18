@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxfxnwcru3vv8"]
+
+[ext_resource type="Texture2D" uid="uid://0gaeqns1fx3r" path="res://GUI.png" id="1_hwgul"]
+
+[node name="dialog_box" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(160, 48)
+layout_mode = 2
+texture = ExtResource("1_hwgul")
+region_rect = Rect2(48, 0, 48, 48)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 11
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 9
+
+[node name="dialog_text" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/NinePatchRect/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 16
+text = "This is a test of the emergency alert system"
+scroll_active = false
+shortcut_keys_enabled = false
+horizontal_alignment = 1
