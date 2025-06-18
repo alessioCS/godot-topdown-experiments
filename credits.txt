@@ -1,0 +1,14 @@
+font: Monogram by datagoblin
+https://datagoblin.itch.io/monogram
+
+font: Clarity by gossamore
+https://gossamore.itch.io/clarity
+
+world and character assets: Sunnyside World by danieldiggle
+https://danieldiggle.itch.io/sunnyside
+
+All other assets are by:
+- Alessio CS
+- stayinHazey 
+- GhostInTheHaze
+(These are the same person)

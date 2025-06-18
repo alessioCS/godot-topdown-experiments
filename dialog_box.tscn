@@ -38,12 +38,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 8
-theme_override_constants/margin_bottom = 8
+
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 11
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 9
 
 [node name="dialog_text" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/NinePatchRect/MarginContainer"]
 layout_mode = 2
-text = "This is a test"
+theme_override_font_sizes/normal_font_size = 16
+text = "This is a test of the emergency alert system"
 scroll_active = false
+shortcut_keys_enabled = false
+horizontal_alignment = 1
