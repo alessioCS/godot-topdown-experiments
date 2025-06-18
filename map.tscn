@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=4 uid="uid://ca27q4ww7wetr"]
+[gd_scene load_steps=6 format=4 uid="uid://ca27q4ww7wetr"]
 
 [ext_resource type="PackedScene" uid="uid://b46b1ai203y1k" path="res://player/player.tscn" id="1_c7s6e"]
+[ext_resource type="TileSet" uid="uid://hxe55worqdg5" path="res://flags.tres" id="2_urblq"]
 [ext_resource type="TileSet" uid="uid://bw4jbm3tndg8h" path="res://world_tileset.tres" id="2_wijl4"]
-[ext_resource type="PackedScene" uid="uid://bv7dxupsdaug" path="res://npc_skelly.tscn" id="3_e0an3"]
+[ext_resource type="PackedScene" uid="uid://bv7dxupsdaug" path="res://npcs/npc_skelly.tscn" id="3_e0an3"]
+[ext_resource type="Script" uid="uid://df1t10ww8rlvt" path="res://flags.gd" id="3_urblq"]
 
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
@@ -19,6 +21,10 @@ tile_set = ExtResource("2_wijl4")
 position = Vector2(0, 1)
 tile_map_data = PackedByteArray("AAAPAAoAAAAmAAIAAAAQAAoAAAAnAAIAAAARAAoAAAAnAAIAAAASAAoAAAAnAAIAAAATAAoAAAAnAAIAAAAUAAoAAAAmAAEAAAAUAAkAAAAoAAMAAAAUAAgAAAAoAAMAAAAUAAcAAAAoAAMAAAAUAAYAAAAoAAEAAAAQAAcAAAAnABoAAAARAAcAAAAhAA0AAAAPAAcAAAAhAA0AAAAOAAcAAAAUAA0AAAASAAcAAAAcAA0AAAAOAAYAAAAUAAwAAAASAAYAAAAcAAwAAAAPAAYAAAAVAAwAAAARAAYAAAAbAAwAAAAQAAUAAAAQAAoAAAAQAAYAAAAYAA0AAAAPAAUAAAAVAAsAAAAOAAUAAAAUAAsAAAAPAAQAAAAVAA8AAAAOAAQAAAAUAA8AAAARAAQAAAAbAA8AAAASAAQAAAAcAA8AAAAQAAQAAAAYAA8AAAARAAUAAAAbAAsAAAASAAUAAAAcAAsAAAA=")
 tile_set = ExtResource("2_wijl4")
+
+[node name="flags" type="TileMapLayer" parent="." groups=["TileFlags"]]
+tile_set = ExtResource("2_urblq")
+script = ExtResource("3_urblq")
 
 [node name="Player" parent="." instance=ExtResource("1_c7s6e")]
 position = Vector2(186, 110)

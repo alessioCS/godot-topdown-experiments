@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://bv7dxupsdaug"]
 
-[ext_resource type="Texture2D" uid="uid://cxyuyedccrfi8" path="res://sprites/skeleton_idle.png" id="1_tnwb8"]
-[ext_resource type="Texture2D" uid="uid://dejcb01fx1lfq" path="res://sprites/skeleton_walk.png" id="2_dffb7"]
+[ext_resource type="Texture2D" uid="uid://cxyuyedccrfi8" path="res://npcs/skeleton_idle.png" id="1_tnwb8"]
+[ext_resource type="Texture2D" uid="uid://dejcb01fx1lfq" path="res://npcs/skeleton_walk.png" id="2_dffb7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dffb7"]
 atlas = ExtResource("1_tnwb8")
