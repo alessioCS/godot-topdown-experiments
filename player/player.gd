@@ -4,6 +4,7 @@ var speed = 0
 const WALK_SPEED = 60
 const RUN_SPEED = 100
 
+@onready var front_ray: RayCast2D = $front_ray
 @onready var camera_2d: Camera2D = $Camera2D
 @onready var sprite = $AnimatedSprite2D
 var input_direction = Vector2.ZERO
@@ -14,7 +15,9 @@ var state: States = States.IDLE
 
 func get_input():
 	input_direction = Input.get_vector("left", "right", "up", "down")
-	
+	if input_direction.length() > 0:
+		front_ray.rotation = input_direction.angle()
+
 func handle_facing():
 	if Input.is_action_pressed("right"):
 		sprite.flip_h = false
@@ -24,6 +27,7 @@ func handle_facing():
 func _ready():
 	camera_2d.make_current()
 	call_deferred("limit_camera")
+	print(front_ray)
 
 func limit_camera():
 	var ground = get_tree().get_nodes_in_group("Ground")[0]

@@ -38,16 +38,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
 theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 11
+theme_override_constants/margin_top = 14
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 9
 
 [node name="dialog_text" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/NinePatchRect/MarginContainer"]
 layout_mode = 2
-theme_override_font_sizes/normal_font_size = 16
-text = "This is a test of the emergency alert system"
+theme_override_font_sizes/normal_font_size = 8
+text = "i am a skeleton why are you talking to me"
 scroll_active = false
 shortcut_keys_enabled = false
-horizontal_alignment = 1
