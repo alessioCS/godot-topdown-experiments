@@ -217,4 +217,5 @@ animation = &"idle"
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="front_ray" type="RayCast2D" parent="."]
+scale = Vector2(1.01881, 1.40271)
 target_position = Vector2(11, 0)

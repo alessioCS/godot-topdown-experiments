@@ -117,7 +117,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_dffb7"]
 radius = 6.0
 
-[node name="NPC SKELLY" type="CharacterBody2D"]
+[node name="NPC SKELLY" type="CharacterBody2D" groups=["npcs"]]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_m5tk1")
