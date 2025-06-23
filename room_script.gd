@@ -6,7 +6,6 @@ extends Node2D
 func _ready():
 	camera_2d.make_current()
 	call_deferred("limit_camera")
-	pass
 
 func limit_camera():
 	var ground = get_tree().get_nodes_in_group("Ground")[0]
@@ -20,4 +19,5 @@ func limit_camera():
 	camera_2d.limit_bottom = (map_limit.position.y + map_limit.size.y) * tile_size.y
 
 func _physics_process(delta):
-	camera_2d.global_position = player.global_position
+	var target = player.global_position
+	camera_2d.global_position = camera_2d.global_position.lerp(player.global_position, delta * 5)
