@@ -18,7 +18,7 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 
 window/size/viewport_width=320
 window/size/viewport_height=180
-window/subwindows/embed_subwindows=false
+window/size/mode=2
 window/stretch/mode="viewport"
 
 [global_group]
