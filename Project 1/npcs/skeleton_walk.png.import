@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0gaeqns1fx3r"
-path="res://.godot/imported/GUI.png-f478c1ec4df8950d3094d6c76be3aa7c.ctex"
+uid="uid://dejcb01fx1lfq"
+path="res://.godot/imported/skeleton_walk.png-de06e63752ec02e15d7bb737253cc764.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GUI.png"
-dest_files=["res://.godot/imported/GUI.png-f478c1ec4df8950d3094d6c76be3aa7c.ctex"]
+source_file="res://Project 1/npcs/skeleton_walk.png"
+dest_files=["res://.godot/imported/skeleton_walk.png-de06e63752ec02e15d7bb737253cc764.ctex"]
 
 [params]
 

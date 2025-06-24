@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boosaji2jmqry"
-path="res://.godot/imported/player_idle.png-5275f7b3088ca075b2e7b12d754333b2.ctex"
+uid="uid://b5y6ikhcc4uqq"
+path="res://.godot/imported/spr_tileset_sunnysideworld_16px.png-af72ba23fa7cc0d39bb842e8216bbea4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/player_idle.png"
-dest_files=["res://.godot/imported/player_idle.png-5275f7b3088ca075b2e7b12d754333b2.ctex"]
+source_file="res://Project 1/sprites/spr_tileset_sunnysideworld_16px.png"
+dest_files=["res://.godot/imported/spr_tileset_sunnysideworld_16px.png-af72ba23fa7cc0d39bb842e8216bbea4.ctex"]
 
 [params]
 

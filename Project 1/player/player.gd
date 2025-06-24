@@ -68,7 +68,7 @@ func limit_camera():
 	camera_2d.limit_bottom = (map_limit.position.y + map_limit.size.y) * tile_size.y
 
 ## Called every frame
-func _physics_process(delta):
+func _physics_process(_delta):
 	
 	## Talking State Check, prevents movement input until released
 	if state == States.TALKING:

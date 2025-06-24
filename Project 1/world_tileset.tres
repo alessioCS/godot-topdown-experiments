@@ -1,10 +1,10 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bw4jbm3tndg8h"]
 
-[ext_resource type="Texture2D" uid="uid://b5y6ikhcc4uqq" path="res://sprites/spr_tileset_sunnysideworld_16px.png" id="1_bh0lh"]
+[ext_resource type="Texture2D" uid="uid://b5y6ikhcc4uqq" path="res://Project 1/sprites/spr_tileset_sunnysideworld_16px.png" id="1_8cbiv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e0an3"]
 resource_name = "World Tileset"
-texture = ExtResource("1_bh0lh")
+texture = ExtResource("1_8cbiv")
 12:0/0 = 0
 13:0/0 = 0
 14:0/0 = 0

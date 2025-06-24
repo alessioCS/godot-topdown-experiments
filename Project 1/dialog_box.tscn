@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cxfxnwcru3vv8"]
 
-[ext_resource type="Texture2D" uid="uid://0gaeqns1fx3r" path="res://GUI.png" id="1_hwgul"]
+[ext_resource type="Texture2D" uid="uid://0gaeqns1fx3r" path="res://Project 1/sprites/GUI.png" id="1_hwgul"]
 
 [node name="dialog_box" type="CanvasLayer"]
 

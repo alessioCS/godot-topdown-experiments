@@ -2,18 +2,18 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cqvpd3101qa2s"
-path="res://.godot/imported/Clarity.ttf-b4a1e8a1b28a77496c5d4ea8211fdcfe.fontdata"
+uid="uid://c0xp306esphyj"
+path="res://.godot/imported/monogram.ttf-901fbfe21641c8a7d2ecf591cc4e24f8.fontdata"
 
 [deps]
 
-source_file="res://Clarity.ttf"
-dest_files=["res://.godot/imported/Clarity.ttf-b4a1e8a1b28a77496c5d4ea8211fdcfe.fontdata"]
+source_file="res://Project 1/monogram.ttf"
+dest_files=["res://.godot/imported/monogram.ttf-901fbfe21641c8a7d2ecf591cc4e24f8.fontdata"]
 
 [params]
 
 Rendering=null
-antialiasing=1
+antialiasing=0
 generate_mipmaps=false
 disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
