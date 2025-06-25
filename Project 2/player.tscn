@@ -1,5 +1,6 @@
-[gd_scene load_steps=41 format=3 uid="uid://vmbmrgu6qy0i"]
+[gd_scene load_steps=42 format=3 uid="uid://vmbmrgu6qy0i"]
 
+[ext_resource type="Script" uid="uid://bgd6bwwivrtk6" path="res://Project 2/player.gd" id="1_4fwyy"]
 [ext_resource type="Texture2D" uid="uid://dtgnd3sfvg244" path="res://Project 2/Assets/elf.png" id="1_oynp2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mxd0m"]
@@ -314,6 +315,7 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
+script = ExtResource("1_4fwyy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_mxd0m")
