@@ -12,7 +12,7 @@ var input_direction = Vector2.ZERO
 var ignore_release = false
 
 ## Scene & Node Instancing/Loading
-var dialog_box = preload("res://dialog_box.tscn")
+var dialog_box = preload("res://Project 1/dialog_box.tscn")
 var active_dialog = null
 
 ## State Machine
