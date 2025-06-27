@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj66x3hs5afyt"]
+
+[ext_resource type="Texture2D" uid="uid://oe3u5o1o5xo2" path="res://Project 2/Assets/Props/props.png" id="1_amiv7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_amiv7"]
+radius = 7.0
+
+[node name="Barrel" type="RigidBody2D"]
+linear_damp = 4.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_amiv7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_amiv7")
+region_enabled = true
+region_rect = Rect2(0, 16, 16, 16)

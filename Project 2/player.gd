@@ -19,6 +19,13 @@ func handle_facing():
 	
 func get_direction():
 	return Input.get_vector("left", "right", "up", "down")
+
+func handle_collisions():
+	for i in get_slide_collision_count():
+		var collision := get_slide_collision(i)
+		var body := collision.get_collider() as RigidBody2D
+		if body:
+			body.apply_force(-50 * collision.get_normal())
 	
 func _physics_process(_delta):
 	direction = get_direction()
@@ -36,4 +43,5 @@ func _physics_process(_delta):
 			sprite.play("walk")
 			velocity = direction * MOVE_SPEED
 	handle_facing()
-	move_and_slide()
+	if move_and_slide():
+		handle_collisions()
