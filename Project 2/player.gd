@@ -20,7 +20,7 @@ func handle_facing():
 func get_direction():
 	return Input.get_vector("left", "right", "up", "down")
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	direction = get_direction()
 	
 	if direction != Vector2.ZERO:
