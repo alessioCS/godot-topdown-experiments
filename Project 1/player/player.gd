@@ -4,7 +4,6 @@ extends CharacterBody2D
 @onready var camera_2d: Camera2D = $Camera2D
 @onready var sprite = $AnimatedSprite2D
 
-var speed = 0
 const WALK_SPEED = 60
 const RUN_SPEED = 100
 var input_direction = Vector2.ZERO
@@ -93,19 +92,17 @@ func _physics_process(_delta):
 			other_input()
 			
 		States.WALKING:
-			speed = WALK_SPEED
 			sprite.play("walk")
 			handle_facing()
 			
-			velocity = input_direction * speed
+			velocity = input_direction * WALK_SPEED
 			move_and_slide()
 			other_input()
 			
 		States.RUN:
 			sprite.play("run")
-			speed = RUN_SPEED
 			handle_facing()
 			
-			velocity = input_direction * speed
+			velocity = input_direction * RUN_SPEED
 			move_and_slide()
 			other_input()
