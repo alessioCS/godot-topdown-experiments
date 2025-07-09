@@ -4,14 +4,14 @@ extends CharacterBody2D
 @onready var camera_2d: Camera2D = $Camera2D
 @onready var sprite = $AnimatedSprite2D
 
-const WALK_SPEED = 60
-const RUN_SPEED = 100
-var input_direction = Vector2.ZERO
+const WALK_SPEED := 60
+const RUN_SPEED := 100
+var input_direction := Vector2.ZERO
 
-var ignore_release = false
+var ignore_release := false
 
 ## Scene & Node Instancing/Loading
-var dialog_box = preload("res://Project 1/dialog_box.tscn")
+var dialog_box := preload("res://Project 1/dialog_box.tscn")
 var active_dialog = null
 
 ## State Machine
