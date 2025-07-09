@@ -49,9 +49,9 @@ func other_input():
 
 ## Changes sprite facing direction w/ left & right press.
 func handle_facing():
-	if Input.is_action_pressed("right"):
+	if input_direction.x > 0:
 		sprite.flip_h = false
-	if Input.is_action_pressed("left"):
+	if input_direction.x < 0:
 		sprite.flip_h = true
 
 ## Camera Limiting Tool
