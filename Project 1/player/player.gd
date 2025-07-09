@@ -68,7 +68,6 @@ func limit_camera():
 
 ## Called every frame
 func _physics_process(_delta):
-	
 	## Talking State Check, prevents movement input until released
 	if state == States.TALKING:
 		other_input()
@@ -93,7 +92,6 @@ func _physics_process(_delta):
 			
 		States.WALKING:
 			sprite.play("walk")
-			handle_facing()
 			
 			velocity = input_direction * WALK_SPEED
 			move_and_slide()
@@ -101,8 +99,8 @@ func _physics_process(_delta):
 			
 		States.RUN:
 			sprite.play("run")
-			handle_facing()
 			
 			velocity = input_direction * RUN_SPEED
 			move_and_slide()
 			other_input()
+	handle_facing()
